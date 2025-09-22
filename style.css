@@ -142,16 +142,16 @@ section.especialidades {
 
 .especialidades .flex {
     display: flex;
-    flex-wrap: wrap;   /* permite quebrar linha */
-    justify-content: center; /* centraliza */
-    gap: 30px; /* espaço entre os cards */
+    flex-wrap: wrap;   
+    justify-content: center; 
+    gap: 30px; 
 }
 
 .especialidades .especialidades-box {
     color: #fff;
     padding: 40px;
-    width: 200px; /* largura fixa */
-    text-align: center; /* centraliza o conteúdo */
+    width: 200px; 
+    text-align: center; 
     border-radius: 10px;
     transition: transform .3s;
 }
