@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #14B83D;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #14B83D;
+}
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #14B83D;
+    transform: scale(1.05);
+}
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #14B83D;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.img-erick {
+    width: 450px;
+    height: auto;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+section.especialidades {
+    padding: 40px 4%;
+}
+
+.especialidades .especialidades-box {
+    color: #fff;
+    padding: 70px;
+    
+}
+
+.especialidades .especialidades-box i {
+    font-size: 57px;
+    color: #14B83D;
+}
+
+.especialidades .especialidades-box p {
+    font-size: 28px;
+}
+
+.especialidades .flex {
+    display: flex;
+    flex-wrap: wrap;   /* permite quebrar linha */
+    justify-content: center; /* centraliza */
+    gap: 30px; /* espaço entre os cards */
+}
+
+.especialidades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    width: 200px; /* largura fixa */
+    text-align: center; /* centraliza o conteúdo */
+    border-radius: 10px;
+    transition: transform .3s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+}
