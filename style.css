@@ -40,6 +40,11 @@ h2.titulo span {
     color: #14B83D;
 }
 
+button:hover, form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #14B83D;
+    transform: scale(1.05);
+}
+
 header {
     padding: 40px 4%;
 }
@@ -69,11 +74,6 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     padding: 0 40px;
-}
-
-.btn-contato button:hover {
-    box-shadow: 0px 0px 8px #14B83D;
-    transform: scale(1.05);
 }
 
 section.topo-do-site {
@@ -122,7 +122,7 @@ section.topo-do-site .flex {
 }
 
 section.especialidades {
-    padding: 40px 4%;
+    padding: 80px 4%;
 }
 
 .especialidades .especialidades-box {
@@ -159,4 +159,174 @@ section.especialidades {
 .especialidades .especialidades-box:hover {
     transform: scale(1.05); 
     cursor: pointer;
+}
+
+.img-sobre img {
+    max-width: 150%; /* nunca ultrapassa o tamanho do container */
+    height: auto;    /* mantém a proporção */
+    border-radius: 12px;
+    }
+
+section.sobre .flex {
+    align-items: center;
+    gap: 140px;
+}
+
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #14B83D;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #14B83D;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.2s;
+}
+
+section.formulario {
+    padding: 120px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #1a1a1a;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #14B83D;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+footer {
+    padding: 40px 4%;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #14B83D;
+}
+
+footer .line-footer p i {
+    color: #14B83D;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+@media screen and (max-width: 1020px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        font-size: 35px;
+        line-height: 30px;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    
+    .menu-deskotp, .btn-contato {
+        display: none;
+    }
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    section.especialidades {
+        padding: 80px 8%;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    footer .flex {
+        flex-direction: column;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
 }
